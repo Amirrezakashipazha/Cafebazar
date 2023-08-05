@@ -1,547 +1,651 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
     <script src="javascript.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://webassets.cafebazaar.ir/images/icons/android-icon-192x192.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>cafe bazar</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="nav">
+      <nav>
+        <div class="d-1-nav">
+          <img src="img/logo.jpg" alt="logo bazar" />
 
-        <nav>
-            <div class="d-1-nav">
-                <img src="img/logo.jpg" alt="logo bazar">
+          <ul>
+            <li class="li-1-d-1-nav">
+              <a title="link" href="#" class="text-nowrap">برنامه</a>
+              <div class="khat-sabz"></div>
+            </li>
+            <li class="li-2-d-1-nav">
+              <a title="link" href="#" class="text-nowrap">بازی</a>
+            </li>
+            <li class="li-2-d-1-nav">
+              <a title="link" href="#" class="text-nowrap">پشتیبانی</a>
+            </li>
+            <li class="li-2-d-1-nav">
+              <a title="link" href="#" class="text-nowrap"
+                >توسعه دهندگان بازار</a
+              >
+            </li>
+            <li class="li-2-d-1-nav">
+              <a title="link" href="#" class="text-nowrap">تبلیغات در بازار</a>
+            </li>
+          </ul>
+        </div>
 
-                <ul>
-                    <li class="li-1-d-1-nav"><a href="#">برنامه</a>
-                        <div class="khat-sabz"></div>
-                    </li>
-                    <li class="li-2-d-1-nav"><a href="#">بازی</a></li>
-                    <li class="li-2-d-1-nav"><a href="#">پشتیبانی</a></li>
-                    <li class="li-2-d-1-nav"><a href="#">توسعه دهندگان بازار</a></li>
-                    <li class="li-2-d-1-nav"><a href="#">تبلیغات در بازار</a></li>
-                </ul>
+        <div class="d-father-d-2-nav-d-3-nav">
+          <div class="d-2-nav">
+            <button title="btn" class="burger-menu" onclick="burgermenu()">
+              <i class="material-icons" id="i-burger">menu</i>
+            </button>
+
+            <div class="burger-item" id="burger-item">
+              <ul class="ul-1-burger-item">
+                <li><img title="img" src="img/logo.jpg" /></li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap"
+                    >توسعه دهندگان بازار</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">فرصت های شغلی</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap"
+                    >نشان دریافت از بازار</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">شریاط استفاده</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">حریم خصوصی</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">پشتیبانی</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap"
+                    >تبلیغات در بازار</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">بلاگ بازار</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap"
+                    >خبرها و بیانیه های بازار</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">بلاگ فنی بازار</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">درباره ما</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+                <li>
+                  <a title="link" href="#" class="text-nowrap">تماس با ما</a
+                  ><i class="fa fa-angle-left"></i>
+                </li>
+              </ul>
+
+              <ul class="ul-2-burger-item">
+                <li>
+                  <a title="link" href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a title="link" href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a title="link" href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+              </ul>
             </div>
 
+            <form action="">
+              <i class="material-icons">search</i>
+              <input type="search" placeholder="جست و جو در بازار" />
+            </form>
 
-            <div class="d-father-d-2-nav-d-3-nav">
+            <i class="material-icons">person</i>
+          </div>
 
-                <div class="d-2-nav">
+          <div class="bottom-input">
+            <ul>
+              <li class="li-1-bottom-input w-33 text-center">
+                <a title="link" href="#">برای شما</a>
+                <div class="khat-sabz"></div>
+              </li>
+              <li class="li-2-bottom-input w-33 text-center">
+                <a title="link" href="#">دسته بندی ها</a>
+              </li>
+              <li class="li-3-bottom-input w-33 text-center">
+                <a title="link" href="#">کودک</a>
+              </li>
+            </ul>
+          </div>
 
-                    <button class="burger-menu" onclick="burgermenu()"><i class="material-icons"
-                            id="i-burger">menu</i></button>
+          <div class="d-3-nav">
+            <button title="btn" class="text-nowrap">دانلود بازار</button>
 
-                    <div class="burger-item" id="burger-item">
-                        <ul class="ul-1-burger-item">
-                            <li><img src="img/logo.jpg"></li>
-                            <li><a href="#">توسعه دهندگان بازار</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">فرصت های شغلی</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">نشان دریافت از بازار</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">شریاط استفاده</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">حریم خصوصی</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">پشتیبانی</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">تبلیغات در بازار</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">بلاگ بازار</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">خبرها و بیانیه های بازار</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">بلاگ فنی بازار</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">درباره ما</a><i class="fa fa-angle-left"></i></li>
-                            <li><a href="#">تماس با ما</a><i class="fa fa-angle-left"></i></li>
-                        </ul>
-
-                        <ul class="ul-2-burger-item">
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
-
-                    </div>
-
-
-                    <form action="">
-                        <i class="material-icons">search</i>
-                        <input type="search" placeholder="جست و جو در بازار">
-                    </form>
-
-                    <i class="material-icons">person</i>
-                </div>
-
-                <div class="bottom-input">
-                    <ul>
-                        <li class="li-1-bottom-input"><a href="#">برای شما</a>
-                            <div class="khat-sabz"></div>
-                        </li>
-                        <li class="li-2-bottom-input"><a href="#">دسته بندی ها</a></li>
-                        <li class="li-3-bottom-input"><a href="#">کودک</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="d-3-nav">
-                    <button>دانلود بازار</button>
-
-                    <button>
-                        <i class="material-icons"> more_vert</i>
-                    </button>
-                </div>
-            </div>
-
-        </nav>
+            <button title="btn">
+              <i class="material-icons"> more_vert</i>
+            </button>
+          </div>
+        </div>
+      </nav>
     </div>
 
-
-
-
-
-
     <main>
-
-        <section class="sec-1">
-            <h2>برنامه ها</h2>
-        </section>
-
-
-        <section class="sec-2">
-            <div class="caption-sec">
-                <h2>برنامه های کاربردی</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright1()" id="btn-right1"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft1()" id="btn-left1"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider1">
-
-
-                <div>
-                    <img src="img/img-1-sec-2.png" alt="">
-                    <h5>inshot - ویرایشگر ویدئو اینشات</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec-2.png" alt="">
-                    <h5>روبیکا</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec-2.png" alt="">
-                    <h5>WhatsApp Business</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec-2.png" alt="">
-                    <h5>تلوبیون:پخش زنده و آرشیو تلویزیرون</h5>
-                    <p>سرگرمی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-5-sec-2.png" alt="">
-                    <h5>همراه تریدر نوبیتکس</h5>
-                    <p>امور مالی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec-2.png" alt="">
-                    <h5>آپارات</h5>
-                    <p>سرگرمی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec-2.png" alt="">
-                    <h5>اپلیکیشن شاد</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec-2.png" alt="">
-                    <h5>ایرانسل من</h5>
-                    <p>ابزار ها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-9-sec-2.png" alt="">
-                    <h5>imo-international Call & Chat</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec-2.png" alt="">
-                    <h5>دیوار</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec-2.png" alt="">
-                    <h5>بلد - نقشه و مسیر یاب</h5>
-                    <p>رفت و آمد</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec-2.png" alt="">
-                    <h5>تقویم اذان گو بادصبا</h5>
-                    <p>مذهبی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-13-sec-2.png" alt="">
-                    <h5>آپ - اپلیکیشن پرداخت همراه</h5>
-                    <p>امور مالی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec-2.png" alt="">
-                    <h5>واتساپ WhatsApp messenger</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec-2.png" alt="">
-                    <h5>instagram</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-16-sec-2.png" alt="">
-                    <h5>همراه من (اپلیکیشن رسمی همراه اول)</h5>
-                    <p>ابزار ها </p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="sec-3">
-            <div class="caption-sec">
-                <h2>کودکانه‌های بازار</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright2()" id="btn-right2"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft2()" id="btn-left2"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider2">
-
-                <div>
-                    <img src="img/img-1-sec-3.png" alt="">
-                    <h5>Supermarket Game - بازی سوپرمارکت</h5>
-                    <p>تفننی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec-3.png" alt="">
-                    <h5>آفرینک - تماشای کارتون و انیمیشن</h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec-3.webp" alt="">
-                    <h5>پاپایو</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec-3.png" alt="">
-                    <h5>Baby Phone for toddlers - تلفن کوچولو ها </h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-5-sec-3.png" alt="">
-                    <h5>My Talking Tom Friends - دوستان تام سخنگو</h5>
-                    <p>تفننی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec-3.png" alt="">
-                    <h5>Learning & Coloring Game - آموزش نقاشی کودکان</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec-3.png" alt="">
-                    <h5>Baby Panda is Fashion Dress Up</h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec-3.png" alt="">
-                    <h5>Kids Learn professions</h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-9-sec-3.png" alt="">
-                    <h5>My Talking Tam2 - تام سنگو2</h5>
-                    <p>تفننی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec-3.png" alt="">
-                    <h5>Dessert Chef - سرآشپز کیک بستنی </h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec-3.png" alt="">
-                    <h5>Icecreame Cone Cupcake Baking - ساخت بستنی قیفی</h5>
-                    <p>تفننی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec-3.png " alt="">
-                    <h5>قطار شادی</h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-13-sec-3.png" alt="">
-                    <h5>My Talking Hank - هنک سخنگو</h5>
-                    <p>تفننی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec-3.png" alt="">
-                    <h5>نوزاد بازیگوش</h5>
-                    <p>کودک</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec-3.png" alt="">
-                    <h5>My Talking Angella - آنجلا سخنگو</h5>
-                    <p>تفننی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-16-sec-3.png" alt="">
-                    <h5>پو - pou</h5>
-                    <p>تفننی</p>
-                </div>
-
-
-            </div>
-        </section>
-
-
-        <section class="sec-4">
-
-            <div class="caption-sec">
-                <h2>برنامه‌های جدید منتخب سردبیران</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright3()" id="btn-right3"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft3()" id="btn-left3"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider3">
-
-                <div>
-                    <img src="img/img-1-sec-4.png" alt="">
-                    <h5>App Lock Master - قفل برنامه</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec-4.png" alt="">
-                    <h5>همراه شهر پلاس</h5>
-                    <p>امور مالی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec-4.webp" alt="">
-                    <h5>lockMypix - گالری مخفی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec-4.webp" alt="">
-                    <h5>دیدیمون</h5>
-                    <p>سرگرمی</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-4.png" alt="">
-                    <h5>Yoga Workout - تمرین و یادگیری یوگا</h5>
-                    <p>تناسب اندام</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec-4.png" alt="">
-                    <h5>همیشه - ورزش درخانه،سبک زندگی سالم</h5>
-                    <p>سبک زندگی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec-4.png" alt="">
-                    <h5>Movie to IOS - انتقال به آی او اس</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec-4.png" alt="">
-                    <h5>موبایل بانک سینا</h5>
-                    <p>امور مالی</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-4.png" alt="">
-                    <h5>adobe photoshopfix - ادوب فوتوشاپ فیکس</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec-4.png" alt="">
-                    <h5>Keep Yoga - کیپ یوگا:تمرین مدیتیشن و یوگا</h5>
-                    <p>تناسب اندام</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec-4.png" alt="">
-                    <h5>فوتبال 360 - فوتبال برای همه</h5>
-                    <p>ورزشی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec-4.png" alt="">
-                    <h5>PENUP - پن آپ</h5>
-                    <p>ابزارها</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec-4.png" alt="">
-                    <h5>دنج - اپلیکیشن مدیتیشن</h5>
-                    <p>سبک زندگی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec-4.png" alt="">
-                    <h5>Clock Vaulet - گالری مخفی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec-4.webp" alt="">
-                    <h5>ترنج - محصولات اینستاگرام</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-16-sec-4.png" alt="">
-                    <h5>DarkRoom photo - ویرایشگر عکس دارک روم</h5>
-                    <p>عکاسی و و یدئو</p>
-                </div>
-
-
-
-            </div>
-        </section>
-
-
-        <section class="sec-5">
-
-            <div class="caption-sec">
-                <h2>برای امتحان‌هات آماده‌ای؟</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright4()" id="btn-right4"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft4()" id="btn-left4"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider4">
-                <div>
-                    <img src="img/img-1-sec-5.png" alt="">
-                    <h5>اپلیکیشن شاد</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec-5.png" alt="">
-                    <h5>همیار (گام به گامف آموزشی،تدریس)</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec-5.png" alt="">
-                    <h5>پادرس - گام به گم،نمونه سوال، جزوه</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec-5.png" alt="">
-                    <h5>photomatch</h5>
-                    <p>آموزش</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-5.png" alt="">
-                    <h5>لایو بوک - آموزش گام به گام با AR</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec-5.png" alt="">
-                    <h5>فیلیمو مدرسه</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec-5.png" alt="">
-                    <h5>میشا کوشا (اول تا پنجم دبستان)</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec-5.png" alt="">
-                    <h5>فندق (علوم اول تا ششم دبستان)</h5>
-                    <p>آموزش</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-5.png" alt="">
-                    <h5>گاجینو - آموزش آنلاین گاج</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec-5.png" alt="">
-                    <h5>آرش و آنا (خودآموز) کلاس اول تا شیشم</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec-5.png" alt="">
-                    <h5>بینهایت</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec-5.png" alt="">
-                    <h5>نمره بهتر - آموزشی</h5>
-                    <p>آموزش</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec-5.png" alt="">
-                    <h5>Study Room - اتاق مطالعه مجازی شما</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <!-- <div>
+      <section class="sec-1">
+        <h2>برنامه ها</h2>
+      </section>
+
+      <section class="sec-2">
+        <div class="caption-sec">
+          <h2>برنامه های کاربردی</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright1()"
+          id="btn-right1"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft1()"
+          id="btn-left1"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider1">
+          <div>
+            <img src="img/img-1-sec-2.png" alt="" />
+            <h5>inshot - ویرایشگر ویدئو اینشات</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec-2.png" alt="" />
+            <h5>روبیکا</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec-2.png" alt="" />
+            <h5>WhatsApp Business</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec-2.png" alt="" />
+            <h5>تلوبیون:پخش زنده و آرشیو تلویزیرون</h5>
+            <p>سرگرمی</p>
+          </div>
+
+          <div>
+            <img src="img/img-5-sec-2.png" alt="" />
+            <h5>همراه تریدر نوبیتکس</h5>
+            <p>امور مالی</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec-2.png" alt="" />
+            <h5>آپارات</h5>
+            <p>سرگرمی</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec-2.png" alt="" />
+            <h5>اپلیکیشن شاد</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec-2.png" alt="" />
+            <h5>ایرانسل من</h5>
+            <p>ابزار ها</p>
+          </div>
+
+          <div>
+            <img src="img/img-9-sec-2.png" alt="" />
+            <h5>imo-international Call & Chat</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec-2.png" alt="" />
+            <h5>دیوار</h5>
+            <p>خرید</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec-2.png" alt="" />
+            <h5>بلد - نقشه و مسیر یاب</h5>
+            <p>رفت و آمد</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec-2.png" alt="" />
+            <h5>تقویم اذان گو بادصبا</h5>
+            <p>مذهبی</p>
+          </div>
+
+          <div>
+            <img src="img/img-13-sec-2.png" alt="" />
+            <h5>آپ - اپلیکیشن پرداخت همراه</h5>
+            <p>امور مالی</p>
+          </div>
+
+          <div>
+            <img src="img/img-14-sec-2.png" alt="" />
+            <h5>واتساپ WhatsApp messenger</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+
+          <div>
+            <img src="img/img-15-sec-2.png" alt="" />
+            <h5>instagram</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+
+          <div>
+            <img src="img/img-16-sec-2.png" alt="" />
+            <h5>همراه من (اپلیکیشن رسمی همراه اول)</h5>
+            <p>ابزار ها</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-3">
+        <div class="caption-sec">
+          <h2>کودکانه‌های بازار</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright2()"
+          id="btn-right2"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft2()"
+          id="btn-left2"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider2">
+          <div>
+            <img src="img/img-1-sec-3.png" alt="" />
+            <h5>Supermarket Game - بازی سوپرمارکت</h5>
+            <p>تفننی</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec-3.png" alt="" />
+            <h5>آفرینک - تماشای کارتون و انیمیشن</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec-3.webp" alt="" />
+            <h5>پاپایو</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec-3.png" alt="" />
+            <h5>Baby Phone for toddlers - تلفن کوچولو ها</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-5-sec-3.png" alt="" />
+            <h5>My Talking Tom Friends - دوستان تام سخنگو</h5>
+            <p>تفننی</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec-3.png" alt="" />
+            <h5>Learning & Coloring Game - آموزش نقاشی کودکان</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec-3.png" alt="" />
+            <h5>Baby Panda is Fashion Dress Up</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec-3.png" alt="" />
+            <h5>Kids Learn professions</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-9-sec-3.png" alt="" />
+            <h5>My Talking Tam2 - تام سنگو2</h5>
+            <p>تفننی</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec-3.png" alt="" />
+            <h5>Dessert Chef - سرآشپز کیک بستنی</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec-3.png" alt="" />
+            <h5>Icecreame Cone Cupcake Baking - ساخت بستنی قیفی</h5>
+            <p>تفننی</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec-3.png " alt="" />
+            <h5>قطار شادی</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-13-sec-3.png" alt="" />
+            <h5>My Talking Hank - هنک سخنگو</h5>
+            <p>تفننی</p>
+          </div>
+
+          <div>
+            <img src="img/img-14-sec-3.png" alt="" />
+            <h5>نوزاد بازیگوش</h5>
+            <p>کودک</p>
+          </div>
+
+          <div>
+            <img src="img/img-15-sec-3.png" alt="" />
+            <h5>My Talking Angella - آنجلا سخنگو</h5>
+            <p>تفننی</p>
+          </div>
+
+          <div>
+            <img src="img/img-16-sec-3.png" alt="" />
+            <h5>پو - pou</h5>
+            <p>تفننی</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-4">
+        <div class="caption-sec">
+          <h2>برنامه‌های جدید منتخب سردبیران</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright3()"
+          id="btn-right3"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft3()"
+          id="btn-left3"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider3">
+          <div>
+            <img src="img/img-1-sec-4.png" alt="" />
+            <h5>App Lock Master - قفل برنامه</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec-4.png" alt="" />
+            <h5>همراه شهر پلاس</h5>
+            <p>امور مالی</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec-4.webp" alt="" />
+            <h5>lockMypix - گالری مخفی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec-4.webp" alt="" />
+            <h5>دیدیمون</h5>
+            <p>سرگرمی</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-4.png" alt="" />
+            <h5>Yoga Workout - تمرین و یادگیری یوگا</h5>
+            <p>تناسب اندام</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec-4.png" alt="" />
+            <h5>همیشه - ورزش درخانه،سبک زندگی سالم</h5>
+            <p>سبک زندگی</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec-4.png" alt="" />
+            <h5>Movie to IOS - انتقال به آی او اس</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec-4.png" alt="" />
+            <h5>موبایل بانک سینا</h5>
+            <p>امور مالی</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-4.png" alt="" />
+            <h5>adobe photoshopfix - ادوب فوتوشاپ فیکس</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec-4.png" alt="" />
+            <h5>Keep Yoga - کیپ یوگا:تمرین مدیتیشن و یوگا</h5>
+            <p>تناسب اندام</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec-4.png" alt="" />
+            <h5>فوتبال 360 - فوتبال برای همه</h5>
+            <p>ورزشی</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec-4.png" alt="" />
+            <h5>PENUP - پن آپ</h5>
+            <p>ابزارها</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec-4.png" alt="" />
+            <h5>دنج - اپلیکیشن مدیتیشن</h5>
+            <p>سبک زندگی</p>
+          </div>
+
+          <div>
+            <img src="img/img-14-sec-4.png" alt="" />
+            <h5>Clock Vaulet - گالری مخفی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-15-sec-4.webp" alt="" />
+            <h5>ترنج - محصولات اینستاگرام</h5>
+            <p>خرید</p>
+          </div>
+
+          <div>
+            <img src="img/img-16-sec-4.png" alt="" />
+            <h5>DarkRoom photo - ویرایشگر عکس دارک روم</h5>
+            <p>عکاسی و و یدئو</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-5">
+        <div class="caption-sec">
+          <h2>برای امتحان‌هات آماده‌ای؟</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright4()"
+          id="btn-right4"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft4()"
+          id="btn-left4"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider4">
+          <div>
+            <img src="img/img-1-sec-5.png" alt="" />
+            <h5>اپلیکیشن شاد</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec-5.png" alt="" />
+            <h5>همیار (گام به گامف آموزشی،تدریس)</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec-5.png" alt="" />
+            <h5>پادرس - گام به گم،نمونه سوال، جزوه</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec-5.png" alt="" />
+            <h5>photomatch</h5>
+            <p>آموزش</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-5.png" alt="" />
+            <h5>لایو بوک - آموزش گام به گام با AR</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec-5.png" alt="" />
+            <h5>فیلیمو مدرسه</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec-5.png" alt="" />
+            <h5>میشا کوشا (اول تا پنجم دبستان)</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec-5.png" alt="" />
+            <h5>فندق (علوم اول تا ششم دبستان)</h5>
+            <p>آموزش</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-5.png" alt="" />
+            <h5>گاجینو - آموزش آنلاین گاج</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec-5.png" alt="" />
+            <h5>آرش و آنا (خودآموز) کلاس اول تا شیشم</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec-5.png" alt="" />
+            <h5>بینهایت</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec-5.png" alt="" />
+            <h5>نمره بهتر - آموزشی</h5>
+            <p>آموزش</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec-5.png" alt="" />
+            <h5>Study Room - اتاق مطالعه مجازی شما</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <!-- <div>
                     <img src="" alt="">
                     <h5></h5>
                     <p></p>
@@ -558,317 +662,354 @@
                     <h5></h5>
                     <p></p>
                 </div> -->
+        </div>
+      </section>
 
-            </div>
-        </section>
+      <section class="sec-6">
+        <div class="caption-sec">
+          <h2>به عکس‌ها متن اضافه کن</h2>
 
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
 
-        <section class="sec-6">
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright5()"
+          id="btn-right5"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft5()"
+          id="btn-left5"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
 
-            <div class="caption-sec">
-                <h2>به عکس‌ها متن اضافه کن</h2>
+        <div class="barname-slider" id="barname-slider5">
+          <div>
+            <img src="img/img-1-sec-6.png" alt="" />
+            <h5>PicsArt – ویرایش عکس پیکس آرت</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
+          <div>
+            <img src="img/img-2-sec-6.png" alt="" />
+            <h5>Lumii – ویرایش تصویر</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-            <button class="btn-right" onclick="funright5()" id="btn-right5"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft5()" id="btn-left5"><i class="fa fa-angle-left"></i></button>
+          <div>
+            <img src="img/img-3-sec-6.png" alt="" />
+            <h5>Photo Editor Pro – ویرایش عکس</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-            <div class="barname-slider" id="barname-slider5">
-                <div>
-                    <img src="img/img-1-sec-6.png" alt="">
-                    <h5>PicsArt – ویرایش عکس پیکس آرت</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-4-sec-6.png" alt="" />
+            <h5>متن نگار</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-6.png" alt="" />
+            <h5>Canva – طراحی لوگو و پوستر کانوا</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-2-sec-6.png" alt="">
-                    <h5>Lumii – ویرایش تصویر</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-6-sec-6.png" alt="" />
+            <h5>عکس نوشته ساز</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-3-sec-6.png" alt="">
-                    <h5>Photo Editor Pro – ویرایش عکس</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-7-sec-6.png" alt="" />
+            <h5>PhotoGrid – ویرایش عکس و ویدیو فوتوگرید</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-4-sec-6.png" alt="">
-                    <h5>متن نگار</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-6.png" alt="">
-                    <h5>Canva – طراحی لوگو و پوستر کانوا</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-8-sec-6.png" alt="" />
+            <h5>Pixlr – Photo Editor</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-6.png" alt="" />
+            <h5>Add Text: Text on Photo Editor – اضافه کردن متن به عکس</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-6-sec-6.png" alt="">
-                    <h5>عکس نوشته ساز</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-10-sec-6.png" alt="" />
+            <h5>TextArt - اضافه کردن متن به عکس</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-7-sec-6.png" alt="">
-                    <h5>PhotoGrid – ویرایش عکس و ویدیو فوتوگرید</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-11-sec-6.png" alt="" />
+            <h5>Phonto - Text on Photos</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-8-sec-6.png" alt="">
-                    <h5>Pixlr – Photo Editor</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-6.png" alt="">
-                    <h5>Add Text: Text on Photo Editor – اضافه کردن متن به عکس</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-12-sec-6.png" alt="" />
+            <h5>Text On Photo - Text to Photos</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec-6.png" alt="" />
+            <h5>ویرایش عکس - کراپ باز</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-10-sec-6.png" alt="">
-                    <h5>TextArt - اضافه کردن متن به عکس</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-14-sec-6.png" alt="" />
+            <h5>Geulgram - Text on Photo</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-11-sec-6.png" alt="">
-                    <h5>Phonto - Text on Photos</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-15-sec-6.png" alt="" />
+            <h5>آلگرام (ساخت کاتالوگ آنلاین)</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-12-sec-6.png" alt="">
-                    <h5>Text On Photo - Text to Photos</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec-6.png" alt="">
-                    <h5>ویرایش عکس - کراپ باز</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec-6.png" alt="">
-                    <h5>Geulgram - Text on Photo</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec-6.png" alt="">
-                    <h5>آلگرام (ساخت کاتالوگ آنلاین)</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <!-- <div>
+          <!-- <div>
                     <img src="img" alt="">
                     <h5></h5>
                     <p></p>
                 </div> -->
+        </div>
+      </section>
 
-            </div>
-        </section>
+      <section class="sec-7">
+        <div class="caption-sec">
+          <h2>بروزرسانی‌های منتخب سردبیران</h2>
 
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
 
-        <section class="sec-7">
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright6()"
+          id="btn-right6"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft6()"
+          id="btn-left6"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
 
-            <div class="caption-sec">
-                <h2>بروزرسانی‌های منتخب سردبیران</h2>
+        <div class="barname-slider" id="barname-slider6">
+          <div>
+            <img src="img/img-1-sec-7.webp" alt="" />
+            <h5>انیمیت فری - ساخت انیمیشن کوتاه</h5>
+            <p>سرگرمی</p>
+          </div>
 
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
+          <div>
+            <img src="img/img-2-sec-7.webp" alt="" />
+            <h5>فوتبال ۳۶۰ - فوتبال برای همه</h5>
+            <p>ورزش</p>
+          </div>
 
-            <button class="btn-right" onclick="funright6()" id="btn-right6"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft6()" id="btn-left6"><i class="fa fa-angle-left"></i></button>
+          <div>
+            <img src="img/img-3-sec-7.png" alt="" />
+            <h5>راویتون | کمیک ایرانی</h5>
+            <p>سرگرمی</p>
+          </div>
 
-            <div class="barname-slider" id="barname-slider6">
-                <div>
-                    <img src="img/img-1-sec-7.webp" alt="">
-                    <h5>انیمیت فری - ساخت انیمیشن کوتاه</h5>
-                    <p>سرگرمی</p>
-                </div>
+          <div>
+            <img src="img/img-4-sec-7.png" alt="" />
+            <h5>بازی قرآنی (یادگیری متفاوت قرآن)</h5>
+            <p>مذهبی</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-7.png" alt="" />
+            <h5>Photo Editor Pro – ویرایش عکس</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-2-sec-7.webp" alt="">
-                    <h5>فوتبال ۳۶۰ - فوتبال برای همه</h5>
-                    <p>ورزش</p>
-                </div>
+          <div>
+            <img src="img/img-6-sec-7.png" alt="" />
+            <h5>کرفس - سلامتی، رژیم و تناسب اندام</h5>
+            <p>تناسب اندام</p>
+          </div>
 
-                <div>
-                    <img src="img/img-3-sec-7.png" alt="">
-                    <h5>راویتون | کمیک ایرانی</h5>
-                    <p>سرگرمی</p>
-                </div>
+          <div>
+            <img src="img/img-7-sec-7.png" alt="" />
+            <h5>سپهر360 | خرید بلیط هواپیما</h5>
+            <p>سفر</p>
+          </div>
 
-                <div>
-                    <img src="img/img-4-sec-7.png" alt="">
-                    <h5>بازی قرآنی (یادگیری متفاوت قرآن)</h5>
-                    <p>مذهبی</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-7.png" alt="">
-                    <h5>Photo Editor Pro – ویرایش عکس</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div>
+            <img src="img/img-8-sec-7.png" alt="" />
+            <h5>واتساپ WhatsApp Messenger</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-7.png" alt="" />
+            <h5>همراه پرداخت ناواکو (پرنا)</h5>
+            <p>امور مالی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-6-sec-7.png" alt="">
-                    <h5>کرفس - سلامتی، رژیم و تناسب اندام</h5>
-                    <p>تناسب اندام</p>
-                </div>
+          <div>
+            <img src="img/img-10-sec-7.png" alt="" />
+            <h5>مینی کالا | بازار خرید و فروش کالا</h5>
+            <p>خرید</p>
+          </div>
 
-                <div>
-                    <img src="img/img-7-sec-7.png" alt="">
-                    <h5>سپهر360 | خرید بلیط هواپیما</h5>
-                    <p>سفر</p>
-                </div>
+          <div>
+            <img src="img/img-11-sec-7.png" alt="" />
+            <h5>ثبت و استعلام چک صیاد (ساد24)</h5>
+            <p>امور مالی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-8-sec-7.png" alt="">
-                    <h5>واتساپ WhatsApp Messenger</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-7.png" alt="">
-                    <h5>همراه پرداخت ناواکو (پرنا)</h5>
-                    <p>امور مالی</p>
-                </div>
+          <div>
+            <img src="img/img-12-sec-7.png" alt="" />
+            <h5>شیپور: خرید و فروش خودرو، ملک و ...</h5>
+            <p>خرید</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec-7.png" alt="" />
+            <h5>بلد — نقشه‌ و ‌مسیریاب</h5>
+            <p>رفت و آمد</p>
+          </div>
 
-                <div>
-                    <img src="img/img-10-sec-7.png" alt="">
-                    <h5>مینی کالا | بازار خرید و فروش کالا</h5>
-                    <p>خرید</p>
-                </div>
+          <div>
+            <img src="img/img-14-sec-7.png" alt="" />
+            <h5>VivaCut - ویرایش ویدیو</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-11-sec-7.png" alt="">
-                    <h5>ثبت و استعلام چک صیاد (ساد24)</h5>
-                    <p>امور مالی</p>
-                </div>
+          <div>
+            <img src="img/img-15-sec-7.png" alt="" />
+            <h5>BeautyPlus-Snap Retouch Filter</h5>
+            <p>عکاسی و ویدئو</p>
+          </div>
 
-                <div>
-                    <img src="img/img-12-sec-7.png" alt="">
-                    <h5>شیپور: خرید و فروش خودرو، ملک و ...</h5>
-                    <p>خرید</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec-7.png" alt="">
-                    <h5>بلد — نقشه‌ و ‌مسیریاب</h5>
-                    <p>رفت و آمد</p>
-                </div>
+          <div>
+            <img src="img/img-16-sec-7.png" alt="" />
+            <h5>باسلام | بازار اجتماعی آنلاین</h5>
+            <p>خرید</p>
+          </div>
+        </div>
+      </section>
 
-                <div>
-                    <img src="img/img-14-sec-7.png" alt="">
-                    <h5>VivaCut - ویرایش ویدیو</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+      <section class="sec-8">
+        <div class="caption-sec">
+          <h2>خریدهای سوپرمارکتی</h2>
 
-                <div>
-                    <img src="img/img-15-sec-7.png" alt="">
-                    <h5>BeautyPlus-Snap Retouch Filter</h5>
-                    <p>عکاسی و ویدئو</p>
-                </div>
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
 
-                <div>
-                    <img src="img/img-16-sec-7.png" alt="">
-                    <h5>باسلام | بازار اجتماعی آنلاین</h5>
-                    <p>خرید</p>
-                </div>
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright7()"
+          id="btn-right7"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft7()"
+          id="btn-left7"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
 
-            </div>
-        </section>
+        <div class="barname-slider" id="barname-slider7">
+          <div>
+            <img src="img/img-1-sec-8.webp" alt="" />
+            <h5>دیجیکالا | فروشگاه خرید آنلاین</h5>
+            <p>خرید</p>
+          </div>
 
+          <div>
+            <img src="img/img-2-sec-8.png" alt="" />
+            <h5>اسنپ |Snapp سامانه هوشمند حمل و نقل</h5>
+            <p>رفت و آمد</p>
+          </div>
 
-        <section class="sec-8">
-            <div class="caption-sec">
-                <h2>خریدهای سوپرمارکتی</h2>
+          <div>
+            <img src="img/img-3-sec-8.png" alt="" />
+            <h5>اکالا I سوپرمارکت آنلاین افق کوروش</h5>
+            <p>خرید</p>
+          </div>
 
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
+          <div>
+            <img src="img/img-4-sec-8.png" alt="" />
+            <h5>اسنپ اکسپرس/ سوپرمارکت آنلاین</h5>
+            <p>خرید</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-8.png" alt="" />
+            <h5>اسنپ فود | سفارش غذا</h5>
+            <p>آشپزی و رستوران</p>
+          </div>
 
-            <button class="btn-right" onclick="funright7()" id="btn-right7"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft7()" id="btn-left7"><i class="fa fa-angle-left"></i></button>
+          <div>
+            <img src="img/img-6-sec-8.png" alt="" />
+            <h5>بازرگام خرید میوه وکالای سوپرمارکتی</h5>
+            <p>خرید</p>
+          </div>
 
-            <div class="barname-slider" id="barname-slider7">
-                <div>
-                    <img src="img/img-1-sec-8.webp" alt="">
-                    <h5>دیجیکالا | فروشگاه خرید آنلاین</h5>
-                    <p>خرید</p>
-                </div>
+          <div>
+            <img src="img/img-7-sec-8.png" alt="" />
+            <h5>اسنپ‌مارکت | سوپرمارکت آنلاین</h5>
+            <p>خرید</p>
+          </div>
 
-                <div>
-                    <img src="img/img-2-sec-8.png" alt="">
-                    <h5>اسنپ |Snapp سامانه هوشمند حمل و نقل</h5>
-                    <p>رفت و آمد</p>
-                </div>
+          <div>
+            <img src="img/img-8-sec-8.png" alt="" />
+            <h5>دیجی‌کالا جت | سوپرمارکت آنلاین</h5>
+            <p>خرید</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-8.png" alt="" />
+            <h5>فروش آنلاین رفاه</h5>
+            <p>خرید</p>
+          </div>
 
-                <div>
-                    <img src="img/img-3-sec-8.png" alt="">
-                    <h5>اکالا I سوپرمارکت آنلاین افق کوروش</h5>
-                    <p>خرید</p>
-                </div>
+          <div>
+            <img src="img/img-10-sec-8.png" alt="" />
+            <h5>پینکت،سفارش آنلاین میوه و سوپرمارکت</h5>
+            <p>خرید</p>
+          </div>
 
-                <div>
-                    <img src="img/img-4-sec-8.png" alt="">
-                    <h5>اسنپ اکسپرس/ سوپرمارکت آنلاین</h5>
-                    <p>خرید</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-8.png" alt="">
-                    <h5>اسنپ فود | سفارش غذا</h5>
-                    <p>آشپزی و رستوران</p>
-                </div>
+          <div>
+            <img src="img/img-11-sec-8.png" alt="" />
+            <h5>هایپرچی - هایپرمارکت آنلاین قم</h5>
+            <p>خرید</p>
+          </div>
 
-                <div>
-                    <img src="img/img-6-sec-8.png" alt="">
-                    <h5>بازرگام خرید میوه وکالای سوپرمارکتی</h5>
-                    <p>خرید</p>
-                </div>
+          <div>
+            <img src="img/img-12-sec-8.png" alt="" />
+            <h5>جیجو - سوپر مارکت آنلاین</h5>
+            <p>خرید</p>
+          </div>
 
-                <div>
-                    <img src="img/img-7-sec-8.png" alt="">
-                    <h5>اسنپ‌مارکت | سوپرمارکت آنلاین</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec-8.png" alt="">
-                    <h5>دیجی‌کالا جت | سوپرمارکت آنلاین</h5>
-                    <p>خرید</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-8.png" alt="">
-                    <h5>فروش آنلاین رفاه</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec-8.png" alt="">
-                    <h5>پینکت،سفارش آنلاین میوه و سوپرمارکت</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec-8.png" alt="">
-                    <h5>هایپرچی - هایپرمارکت آنلاین قم</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec-8.png" alt="">
-                    <h5>جیجو - سوپر مارکت آنلاین</h5>
-                    <p>خرید</p>
-                </div>
-
-                <!-- <div>
+          <!-- <div>
                     <img src="img" alt="">
                     <h5></h5>
                     <p></p>
@@ -891,874 +1032,934 @@
                     <h5></h5>
                     <p></p>
                 </div> -->
-
-            </div>
-        </section>
-
-
-        <section class="sec-9">
-
-            <div class="caption-sec">
-                <h2>ویترین برنامه‌ها</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright8()" id="btn-right8"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft8()" id="btn-left8"><i class="fa fa-angle-left"></i></button>
-
-            <div class="slider-big" id="barname-slider8">
-
-                <a href="#"><img src="img/img-1-sec-9.webp" alt="" class="img-1-big-slider"></a>
-                <a href="#"><img src="img/img-2-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-3-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-4-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-5-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-6-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-7-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-8-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-9-sec-9.webp" alt=""></a>
-                <a href="#"><img src="img/img-10-sec-9.webp" alt="" class="img-10-big-slider"></a>
-
-            </div>
-        </section>
-
-
-        <section class="sec-10">
-
-            <div class="caption-sec">
-                <h2>برنامه‌های کم حجم</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright9()" id="btn-right9"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft9()" id="btn-left9"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider9">
-                <div>
-                    <img src="img/img-1-sec10.png" alt="">
-                    <h5>Automatic Call Recorder</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec10.png" alt="">
-                    <h5>آخرین‌خبر | اخبار لحظه‌ای ورزشی و…</h5>
-                    <p>کتاب ها و مطبوعات</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec10.png" alt="">
-                    <h5>تقویم اذان گو بادصبا</h5>
-                    <p>مذهبی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec10.png" alt="">
-                    <h5>Vault - Hide Pics, App Lock</h5>
-                    <p>ابزارها</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec10.png" alt="">
-                    <h5>ZArchiver</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec10.png" alt="">
-                    <h5>FotMob – نتایج زنده‌ی فوتبال</h5>
-                    <p>ورزشی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec10.png" alt="">
-                    <h5>AppLock</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec10.png" alt="">
-                    <h5>Google Earth</h5>
-                    <p>سفر</p>
-                </div>
-
-                <div>
-                    <img src="img/img-9-sec10.png" alt="">
-                    <h5>Shazam: Music Discovery</h5>
-                    <p>موسیقی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec10.webp" alt="">
-                    <h5>تقویم فارسی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec10.png" alt="">
-                    <h5>Tiny Flashlight + LED</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec10.png" alt="">
-                    <h5>Clean Master - Antivirus, Applock & Cleaner</h5>
-                    <p>ابزارها</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec10.png" alt="">
-                    <h5>Adobe Connect</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec10.png" alt="">
-                    <h5>Snapseed – ویرایشگر عکس اسنپ سید</h5>
-                    <h5>عکاسی و ویدئو</h5>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec10.png" alt="">
-                    <h5>دیوار</h5>
-                    <p>خرید</p>
-                </div>
-
-                <div>
-                    <img src="img/img-16-sec10.png" alt="">
-                    <h5>Pinterest</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="sec-11">
-
-            <div class="caption-sec">
-                <h2>ابزارهای ضروری موبایل</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright10()" id="btn-right10"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft10()" id="btn-left10"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider10">
-                <div>
-                    <img src="img/img-1-sec11.png" alt="">
-                    <h5>Kaspersky Antivirus & VPN</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec11.png" alt="">
-                    <h5>گوشیتوسریع کن+آنتی ویروس+افزایشسرعت</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec11.png" alt="">
-                    <h5>AppLock</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec11.png" alt="">
-                    <h5>Avira Antivirus - Virus Cleaner, Scanner & AppLock</h5>
-                    <p>ابزارها</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec11.png" alt="">
-                    <h5>AVG Cleaner – Storage Cleaner</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec11.png" alt="">
-                    <h5>AppLock - Fingerprint</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec11.png" alt="">
-                    <h5>Antivirus - آنتی ویروس،‌ قفل برنامه و خنک کننده‌ی گوشی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec11.png" alt="">
-                    <h5>Avast Antivirus & Security</h5>
-                    <p>ابزارها</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec11.png" alt="">
-                    <h5>آنتی ویروس دکتر وب - نسخه رایگان</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec11.png" alt="">
-                    <h5>قفل برنامه ها</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec11.png" alt="">
-                    <h5>Memory cleaner – تمیز کردن و افزایش حافظه‌ی گوشی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec11.png" alt="">
-                    <h5>Accu​Battery</h5>
-                    <p>ابزارها</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec11.png" alt="">
-                    <h5>Clean Master - Antivirus, Applock & Cleaner</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec11.png" alt="">
-                    <h5>قفل برنامه های گوشی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec11.png" alt="">
-                    <h5>بیت‌بان | ضدویروس، قفل برنامه و عکس</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-16-sec11.png" alt="">
-                    <h5>چفتک ( قفل برنامه - گالری مخفی)</h5>
-                    <p>ابزارها</p>
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <section class="sec-12">
-
-            <div class="caption-sec">
-                <h2>برترین برنامه‌ها</h2>
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-            <button class="btn-right" onclick="funright11()" id="btn-right11"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft11()" id="btn-left11"><i class="fa fa-angle-left"></i></button>
-
-            <div class="barname-slider" id="barname-slider11">
-
-                <div>
-                    <img src="img/img-1-sec-12.png" alt="">
-                    <h5>همراه بانک سپه</h5>
-                    <p>امور مالی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-2-sec-12.webp" alt="">
-                    <h5>تقویم فارسی</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-3-sec-12.png" alt="">
-                    <h5>تقویم شميم ياس 1401 اذانگو</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-4-sec-12.webp" alt="">
-                    <h5>فوتبال ۳۶۰ - فوتبال برای همه</h5>
-                    <p>ورزشی</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-12.png" alt="">
-                    <h5>دولت همراه</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-6-sec-12.webp" alt="">
-                    <h5>Advanced Download Manager</h5>
-                    <p>ابزارها</p>
-                </div>
-
-                <div>
-                    <img src="img/img-7-sec-12.png" alt="">
-                    <h5>آیتول | سامانه خودروی من</h5>
-                    <p>امور مالی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-8-sec-12.png" alt="">
-                    <h5>بیمه سلامت من</h5>
-                    <p>پزشکی</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-12.png" alt="">
-                    <h5>اذان گو (تقویم و اوقات شرعی گویا)</h5>
-                    <p>مذهبی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-10-sec-12.png" alt="">
-                    <h5>دعای جوشن کبیر</h5>
-                    <p>مذهبی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-11-sec-12.png" alt="">
-                    <h5>گاجینو | آموزش آنلاین گاج</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-12-sec-12.png" alt="">
-                    <h5>بیپ تونز (دانلود آهنگ)</h5>
-                    <p>موسیقی</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec-12.png" alt="">
-                    <h5>فیدیبو |دانلود کتاب الکترونیک و صوتی</h5>
-                    <p>کتاب ها و مطبوعات</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec-12.png" alt="">
-                    <h5>نوار | کتاب صوتی خلاصه کتاب پادکست</h5>
-                    <p>کتاب ها و مطبوعات</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec-12.png" alt="">
-                    <h5>بانی‌مد‌-مرکز خرید آنلاین</h5>
-                    <p>خرید</p>
-                </div>
-
-                <!-- <div>
+        </div>
+      </section>
+
+      <section class="sec-9">
+        <div class="caption-sec">
+          <h2>ویترین برنامه‌ها</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright8()"
+          id="btn-right8"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft8()"
+          id="btn-left8"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="slider-big" id="barname-slider8">
+          <a title="link" href="#"
+            ><img src="img/img-1-sec-9.webp" alt="" class="img-1-big-slider"
+          /></a>
+          <a title="link" href="#"><img src="img/img-2-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-3-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-4-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-5-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-6-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-7-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-8-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"><img src="img/img-9-sec-9.webp" alt="" /></a>
+          <a title="link" href="#"
+            ><img src="img/img-10-sec-9.webp" alt="" class="img-10-big-slider"
+          /></a>
+        </div>
+      </section>
+
+      <section class="sec-10">
+        <div class="caption-sec">
+          <h2>برنامه‌های کم حجم</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright9()"
+          id="btn-right9"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft9()"
+          id="btn-left9"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider9">
+          <div>
+            <img src="img/img-1-sec10.png" alt="" />
+            <h5>Automatic Call Recorder</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec10.png" alt="" />
+            <h5>آخرین‌خبر | اخبار لحظه‌ای ورزشی و…</h5>
+            <p>کتاب ها و مطبوعات</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec10.png" alt="" />
+            <h5>تقویم اذان گو بادصبا</h5>
+            <p>مذهبی</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec10.png" alt="" />
+            <h5>Vault - Hide Pics, App Lock</h5>
+            <p>ابزارها</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec10.png" alt="" />
+            <h5>ZArchiver</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec10.png" alt="" />
+            <h5>FotMob – نتایج زنده‌ی فوتبال</h5>
+            <p>ورزشی</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec10.png" alt="" />
+            <h5>AppLock</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec10.png" alt="" />
+            <h5>Google Earth</h5>
+            <p>سفر</p>
+          </div>
+
+          <div>
+            <img src="img/img-9-sec10.png" alt="" />
+            <h5>Shazam: Music Discovery</h5>
+            <p>موسیقی</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec10.webp" alt="" />
+            <h5>تقویم فارسی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec10.png" alt="" />
+            <h5>Tiny Flashlight + LED</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec10.png" alt="" />
+            <h5>Clean Master - Antivirus, Applock & Cleaner</h5>
+            <p>ابزارها</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec10.png" alt="" />
+            <h5>Adobe Connect</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-14-sec10.png" alt="" />
+            <h5>Snapseed – ویرایشگر عکس اسنپ سید</h5>
+            <h5>عکاسی و ویدئو</h5>
+          </div>
+
+          <div>
+            <img src="img/img-15-sec10.png" alt="" />
+            <h5>دیوار</h5>
+            <p>خرید</p>
+          </div>
+
+          <div>
+            <img src="img/img-16-sec10.png" alt="" />
+            <h5>Pinterest</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-11">
+        <div class="caption-sec">
+          <h2>ابزارهای ضروری موبایل</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright10()"
+          id="btn-right10"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft10()"
+          id="btn-left10"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider10">
+          <div>
+            <img src="img/img-1-sec11.png" alt="" />
+            <h5>Kaspersky Antivirus & VPN</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec11.png" alt="" />
+            <h5>گوشیتوسریع کن+آنتی ویروس+افزایشسرعت</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec11.png" alt="" />
+            <h5>AppLock</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec11.png" alt="" />
+            <h5>Avira Antivirus - Virus Cleaner, Scanner & AppLock</h5>
+            <p>ابزارها</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec11.png" alt="" />
+            <h5>AVG Cleaner – Storage Cleaner</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec11.png" alt="" />
+            <h5>AppLock - Fingerprint</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec11.png" alt="" />
+            <h5>Antivirus - آنتی ویروس،‌ قفل برنامه و خنک کننده‌ی گوشی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec11.png" alt="" />
+            <h5>Avast Antivirus & Security</h5>
+            <p>ابزارها</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec11.png" alt="" />
+            <h5>آنتی ویروس دکتر وب - نسخه رایگان</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec11.png" alt="" />
+            <h5>قفل برنامه ها</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec11.png" alt="" />
+            <h5>Memory cleaner – تمیز کردن و افزایش حافظه‌ی گوشی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec11.png" alt="" />
+            <h5>Accu​Battery</h5>
+            <p>ابزارها</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec11.png" alt="" />
+            <h5>Clean Master - Antivirus, Applock & Cleaner</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-14-sec11.png" alt="" />
+            <h5>قفل برنامه های گوشی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-15-sec11.png" alt="" />
+            <h5>بیت‌بان | ضدویروس، قفل برنامه و عکس</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-16-sec11.png" alt="" />
+            <h5>چفتک ( قفل برنامه - گالری مخفی)</h5>
+            <p>ابزارها</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-12">
+        <div class="caption-sec">
+          <h2>برترین برنامه‌ها</h2>
+
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright11()"
+          id="btn-right11"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft11()"
+          id="btn-left11"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="barname-slider" id="barname-slider11">
+          <div>
+            <img src="img/img-1-sec-12.png" alt="" />
+            <h5>همراه بانک سپه</h5>
+            <p>امور مالی</p>
+          </div>
+
+          <div>
+            <img src="img/img-2-sec-12.webp" alt="" />
+            <h5>تقویم فارسی</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-3-sec-12.png" alt="" />
+            <h5>تقویم شميم ياس 1401 اذانگو</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-4-sec-12.webp" alt="" />
+            <h5>فوتبال ۳۶۰ - فوتبال برای همه</h5>
+            <p>ورزشی</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-12.png" alt="" />
+            <h5>دولت همراه</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-6-sec-12.webp" alt="" />
+            <h5>Advanced Download Manager</h5>
+            <p>ابزارها</p>
+          </div>
+
+          <div>
+            <img src="img/img-7-sec-12.png" alt="" />
+            <h5>آیتول | سامانه خودروی من</h5>
+            <p>امور مالی</p>
+          </div>
+
+          <div>
+            <img src="img/img-8-sec-12.png" alt="" />
+            <h5>بیمه سلامت من</h5>
+            <p>پزشکی</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-12.png" alt="" />
+            <h5>اذان گو (تقویم و اوقات شرعی گویا)</h5>
+            <p>مذهبی</p>
+          </div>
+
+          <div>
+            <img src="img/img-10-sec-12.png" alt="" />
+            <h5>دعای جوشن کبیر</h5>
+            <p>مذهبی</p>
+          </div>
+
+          <div>
+            <img src="img/img-11-sec-12.png" alt="" />
+            <h5>گاجینو | آموزش آنلاین گاج</h5>
+            <p>آموزش</p>
+          </div>
+
+          <div>
+            <img src="img/img-12-sec-12.png" alt="" />
+            <h5>بیپ تونز (دانلود آهنگ)</h5>
+            <p>موسیقی</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec-12.png" alt="" />
+            <h5>فیدیبو |دانلود کتاب الکترونیک و صوتی</h5>
+            <p>کتاب ها و مطبوعات</p>
+          </div>
+
+          <div>
+            <img src="img/img-14-sec-12.png" alt="" />
+            <h5>نوار | کتاب صوتی خلاصه کتاب پادکست</h5>
+            <p>کتاب ها و مطبوعات</p>
+          </div>
+
+          <div>
+            <img src="img/img-15-sec-12.png" alt="" />
+            <h5>بانی‌مد‌-مرکز خرید آنلاین</h5>
+            <p>خرید</p>
+          </div>
+
+          <!-- <div>
                     <img src="" alt="">
                     <h5></h5>
                     <p></p>
                 </div> -->
-            </div>
-        </section>
+        </div>
+      </section>
 
+      <section class="sec-13">
+        <div class="caption-sec">
+          <h2>برنامه‌های پرفروش</h2>
 
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
 
+        <button
+          title="btn"
+          class="btn-right"
+          onclick="funright12()"
+          id="btn-right12"
+        >
+          <i class="fa fa-angle-right"></i>
+        </button>
+        <button
+          title="btn"
+          class="btn-left"
+          onclick="funleft12()"
+          id="btn-left12"
+        >
+          <i class="fa fa-angle-left"></i>
+        </button>
 
-        <section class="sec-13">
+        <div class="barname-slider" id="barname-slider12">
+          <div>
+            <img src="img/img-1-sec-13.png" alt="" />
+            <h5>دیوار</h5>
+            <p>خرید</p>
+          </div>
 
+          <div>
+            <img src="img/img-2-sec-13.png" alt="" />
+            <h5>فیلیمو - تماشای فیلم و سریال</h5>
+            <p>سرگرمی</p>
+          </div>
 
-            <div class="caption-sec">
-                <h2>برنامه‌های پرفروش</h2>
+          <div>
+            <img src="img/img-3-sec-13.png" alt="" />
+            <h5>نماوا - تماشای آنلاین فیلم و سریال</h5>
+            <p>سرگرمی</p>
+          </div>
 
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
+          <div>
+            <img src="img/img-4-sec-13.png" alt="" />
+            <h5>طاقچه | کتاب‌ الکترونیکی و صوتی</h5>
+            <p>کتاب ها و مطبوعات</p>
+          </div>
+          <div>
+            <img src="img/img-5-sec-13.png" alt="" />
+            <h5>فیلم‌نت - تماشای فیلم و سریال</h5>
+            <p>سرگرمی</p>
+          </div>
 
-            <button class="btn-right" onclick="funright12()" id="btn-right12"><i class="fa fa-angle-right"></i></button>
-            <button class="btn-left" onclick="funleft12()" id="btn-left12"><i class="fa fa-angle-left"></i></button>
+          <div>
+            <img src="img/img-6-sec-13.png" alt="" />
+            <h5>شیپور: خرید و فروش خودرو، ملک و ...</h5>
+            <p>خرید</p>
+          </div>
 
-            <div class="barname-slider" id="barname-slider12">
+          <div>
+            <img src="img/img-7-sec-13.png" alt="" />
+            <h5>لایک بگیر اینستاگرام</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-1-sec-13.png" alt="">
-                    <h5>دیوار</h5>
-                    <p>خرید</p>
-                </div>
+          <div>
+            <img src="img/img-8-sec-13.png" alt="" />
+            <h5>فالوور بگیر اینستاگرام</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+          <div>
+            <img src="img/img-9-sec-13.png" alt="" />
+            <h5>کرفس - سلامتی، رژیم و تناسب اندام</h5>
+            <p>تناسب اندام</p>
+          </div>
 
-                <div>
-                    <img src="img/img-2-sec-13.png" alt="">
-                    <h5>فیلیمو - تماشای فیلم و سریال</h5>
-                    <p>سرگرمی</p>
-                </div>
+          <div>
+            <img src="img/img-10-sec-13.png" alt="" />
+            <h5>لایک بگیر اینستاگرام - توربو لایک</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-3-sec-13.png" alt="">
-                    <h5>نماوا - تماشای آنلاین فیلم و سریال</h5>
-                    <p>سرگرمی</p>
-                </div>
+          <div>
+            <img src="img/img-11-sec-13.png" alt="" />
+            <h5>فالوور بگیر | توربو فالور اینستاگرام</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-4-sec-13.png" alt="">
-                    <h5>طاقچه | کتاب‌ الکترونیکی و صوتی</h5>
-                    <p>کتاب ها و مطبوعات</p>
-                </div>
-                <div>
-                    <img src="img/img-5-sec-13.png" alt="">
-                    <h5>فیلم‌نت - تماشای فیلم و سریال</h5>
-                    <p>سرگرمی</p>
-                </div>
+          <div>
+            <img src="img/img-12-sec-13.png" alt="" />
+            <h5>ویوکده ‌| بازدید لایو | استوری|لایک</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
+          <div>
+            <img src="img/img-13-sec-13.png" alt="" />
+            <h5>پاپایو</h5>
+            <p>آموزش</p>
+          </div>
 
-                <div>
-                    <img src="img/img-6-sec-13.png" alt="">
-                    <h5>شیپور: خرید و فروش خودرو، ملک و ...</h5>
-                    <p>خرید</p>
-                </div>
+          <div>
+            <img src="img/img-14-sec-13.png" alt="" />
+            <h5>فیدیبو |دانلود کتاب الکترونیک و صوتی</h5>
+            <p>کتاب ها و مطبوعات</p>
+          </div>
 
-                <div>
-                    <img src="img/img-7-sec-13.png" alt="">
-                    <h5>لایک بگیر اینستاگرام</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
+          <div>
+            <img src="img/img-15-sec-13.png" alt="" />
+            <h5>کافه ممبر-فالور،لایک،کامنت،ممبر</h5>
+            <p>شبکه های اجتماعی</p>
+          </div>
 
-                <div>
-                    <img src="img/img-8-sec-13.png" alt="">
-                    <h5>فالوور بگیر اینستاگرام</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-                <div>
-                    <img src="img/img-9-sec-13.png" alt="">
-                    <h5>کرفس - سلامتی، رژیم و تناسب اندام</h5>
-                    <p>تناسب اندام</p>
-                </div>
+          <div>
+            <img src="img/img-16-sec-13.png" alt="" />
+            <h5>گهواره: بارداری و کودک</h5>
+            <p>پزشکی</p>
+          </div>
+        </div>
+      </section>
 
-                <div>
-                    <img src="img/img-10-sec-13.png" alt="">
-                    <h5>لایک بگیر اینستاگرام - توربو لایک</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
+      <section class="sec-14">
+        <div class="caption-sec">
+          <h2>دسته‌بندی‌های برنامه</h2>
 
-                <div>
-                    <img src="img/img-11-sec-13.png" alt="">
-                    <h5>فالوور بگیر | توربو فالور اینستاگرام</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
+          <div class="more-sec">
+            <p>بیشتر</p>
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
 
-                <div>
-                    <img src="img/img-12-sec-13.png" alt="">
-                    <h5>ویوکده ‌| بازدید لایو | استوری|لایک</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-                <div>
-                    <img src="img/img-13-sec-13.png" alt="">
-                    <h5>پاپایو</h5>
-                    <p>آموزش</p>
-                </div>
-
-                <div>
-                    <img src="img/img-14-sec-13.png" alt="">
-                    <h5>فیدیبو |دانلود کتاب الکترونیک و صوتی</h5>
-                    <p>کتاب ها و مطبوعات</p>
-                </div>
-
-                <div>
-                    <img src="img/img-15-sec-13.png" alt="">
-                    <h5>کافه ممبر-فالور،لایک،کامنت،ممبر</h5>
-                    <p>شبکه های اجتماعی</p>
-                </div>
-
-                <div>
-                    <img src="img/img-16-sec-13.png" alt="">
-                    <h5>گهواره: بارداری و کودک</h5>
-                    <p>پزشکی</p>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="sec-14">
-            <div class="caption-sec">
-                <h2>دسته‌بندی‌های برنامه</h2>
-
-
-                <div class="more-sec">
-                    <p>بیشتر</p><i class="	fa fa-angle-left"></i>
-                </div>
-            </div>
-
-
-
-
-            <div class="matn-sec-14">
-
-
-
-                <div class="d-matn-sec-14">
-                    <div>
-                        <img src="img/img-1-sec-14.webp" alt="">
-                        <p>سرگرمی</p>
-                    </div>
-
-                    <i class="	fa fa-angle-left"></i>
-                </div>
-
-                <div class="d-matn-sec-14">
-                    <div>
-                        <img src="img/img-2-sec-14.webp" alt="">
-                        <p>آموزش</p>
-                    </div>
-
-                    <i class="	fa fa-angle-left"></i>
-                </div>
-
-                <div class="d-matn-sec-14">
-                    <div>
-                        <img src="img/img-3-sec-14.webp" alt="">
-                        <p>خرید</p>
-                    </div>
-
-                    <i class="	fa fa-angle-left"></i>
-                </div>
-
-
-                <div class="d-matn-sec-14">
-                    <div>
-                        <img src="img/img-4-sec-14.webp" alt="">
-                        <p>شبکه های اجتماعی</p>
-                    </div>
-
-                    <i class="	fa fa-angle-left"></i>
-                </div>
-
-                <div class="d-matn-sec-14">
-                    <div>
-                        <img src="img/img-5-sec-14.webp" alt="">
-                        <p>عکاسی و ویدئو</p>
-                    </div>
-
-                    <i class="	fa fa-angle-left"></i>
-                </div>
-
-                <div class="d-matn-sec-14">
-                    <div>
-                        <img src="img/img-6-sec-14.webp" alt="">
-                        <p>امور مالی</p>
-                    </div>
-
-                    <i class="	fa fa-angle-left"></i>
-                </div>
-
-
-
-
+        <div class="matn-sec-14">
+          <div class="d-matn-sec-14">
+            <div>
+              <img src="img/img-1-sec-14.webp" alt="" />
+              <p>سرگرمی</p>
             </div>
 
-        </section>
+            <i class="fa fa-angle-left"></i>
+          </div>
 
+          <div class="d-matn-sec-14">
+            <div>
+              <img src="img/img-2-sec-14.webp" alt="" />
+              <p>آموزش</p>
+            </div>
 
+            <i class="fa fa-angle-left"></i>
+          </div>
 
-        <section class="sec-15" id="sec-15">
+          <div class="d-matn-sec-14">
+            <div>
+              <img src="img/img-3-sec-14.webp" alt="" />
+              <p>خرید</p>
+            </div>
 
+            <i class="fa fa-angle-left"></i>
+          </div>
 
-            <button class="btn-show-bottom" onclick="funshowmore()"><i class="fa fa-angle-down"
-                    id="i-more"></i></button>
+          <div class="d-matn-sec-14">
+            <div>
+              <img src="img/img-4-sec-14.webp" alt="" />
+              <p>شبکه های اجتماعی</p>
+            </div>
 
+            <i class="fa fa-angle-left"></i>
+          </div>
 
-            <p>به خودتان نگاهی بیندازید، آیا برای انجام هر کاری به گوشی خود سر نمی‌زنید؟ آیا به‌دنبال
-                <strong>دانلود برنامه‌های اندرویدی</strong>
-                نیستید که کارهایتان را آسان‌تر کنند؟ ما در بازار
-                <strong>اپلیکیشن‌های اندروید</strong>
-                ، برای هر موضوعی که در ذهن
-                شماست، برنامه داریم و امکان نصب و دانلود آن‌ها را با اینترنت نیم‌بها و با سپر امنیت بازار برایتان فراهم
-                کرده‌ایم.</p>
+          <div class="d-matn-sec-14">
+            <div>
+              <img src="img/img-5-sec-14.webp" alt="" />
+              <p>عکاسی و ویدئو</p>
+            </div>
 
+            <i class="fa fa-angle-left"></i>
+          </div>
 
-            <p>اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم شده‌اند که در ادامه آن‌ها را برایتان معرفی می‌کنیم. کافی است
-                موضوع مورد علاقه‌ی خود را انتخاب کنید و از بین صدها برنامه هر دسته، بهترین و کاربردی‌ترین اپ را دانلود
-                کنید. فراموش نکنید که حتما به نظرات و امتیازی (Rating) که کاربران به برنامه‌ها داده‌اند نیز توجه کنید تا
-                حافظه موبایل‌تان را با اپ‌های بهتری پر کنید.</p>
+          <div class="d-matn-sec-14">
+            <div>
+              <img src="img/img-6-sec-14.webp" alt="" />
+              <p>امور مالی</p>
+            </div>
 
+            <i class="fa fa-angle-left"></i>
+          </div>
+        </div>
+      </section>
 
-            <h3>دانلود برنامه‌های جدید اندرویدی</h3>
-            <p>در صفحه اصلی بازار می‌توانید برنامه‌های جدید منتخب سردبیران و همینطور بروزرسانی‌های منتخب را ببینید و از
-                هیچ برنامه جدیدی جا نمانید. بازی‌های جدید نیز در صفحه بازی‌های اندرویدی بازار به‌همین ترتیب مشخص هستند.
-            </p>
+      <section class="sec-15" id="sec-15">
+        <button title="btn" class="btn-show-bottom" onclick="funshowmore()">
+          <i class="fa fa-angle-down" id="i-more"></i>
+        </button>
 
+        <p>
+          به خودتان نگاهی بیندازید، آیا برای انجام هر کاری به گوشی خود سر
+          نمی‌زنید؟ آیا به‌دنبال
+          <strong>دانلود برنامه‌های اندرویدی</strong>
+          نیستید که کارهایتان را آسان‌تر کنند؟ ما در بازار
+          <strong>اپلیکیشن‌های اندروید</strong>
+          ، برای هر موضوعی که در ذهن شماست، برنامه داریم و امکان نصب و دانلود
+          آن‌ها را با اینترنت نیم‌بها و با سپر امنیت بازار برایتان فراهم
+          کرده‌ایم.
+        </p>
 
-            <h3>برنامه‌های شبکه‌های اجتماعی</h3>
-            <p>امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های اجتماعی امکان‌پذیر مثل واتساپ، اینستاگرام،
-                تلگرام، توییتر، یوتیوب و ... نیست. هر برنامه‌ای که دوست دارید را انتخاب و ارتباط با جهان را آغاز کنید.
-                جدیدترین بروزرسانی این اپ‌های بسیار پرطرفدار نیز به محض انتشار، در بازار قرار می‌گیرند و از طریق
-                اطلاع‌رسانی‌ها (نوتیفیکیشن) شما را مطلع می‌کنند.</p>
+        <p>
+          اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم شده‌اند که در ادامه آن‌ها
+          را برایتان معرفی می‌کنیم. کافی است موضوع مورد علاقه‌ی خود را انتخاب
+          کنید و از بین صدها برنامه هر دسته، بهترین و کاربردی‌ترین اپ را دانلود
+          کنید. فراموش نکنید که حتما به نظرات و امتیازی (Rating) که کاربران به
+          برنامه‌ها داده‌اند نیز توجه کنید تا حافظه موبایل‌تان را با اپ‌های
+          بهتری پر کنید.
+        </p>
 
+        <h3>دانلود برنامه‌های جدید اندرویدی</h3>
+        <p>
+          در صفحه اصلی بازار می‌توانید برنامه‌های جدید منتخب سردبیران و همینطور
+          بروزرسانی‌های منتخب را ببینید و از هیچ برنامه جدیدی جا نمانید.
+          بازی‌های جدید نیز در صفحه بازی‌های اندرویدی بازار به‌همین ترتیب مشخص
+          هستند.
+        </p>
 
-            <h3>ابزارهای اندرویدی</h3>
-            <p>گوشی شما با برنامه‌های دسته‌ی ابزارهای بازار، آچار فرانسه‌ است. از ماشین حساب، زنگ، یادآور و تقویم گرفته
-                تا ابزارهای افزایش سرعت گوشی، قفل برنامه‌ها، افزایش عمر باتری، ارزیابی سرعت و مصرف اینترنت، تبدیل
-                واحدها، بارکد ساز و بارکدخوان، قطب‌نما، چراغ قوه، ساخت نسخه‌ی پشتیبان، دفتر یادداشت، آنتی ویروس‌ها،
-                حافظه‌ی ابری و بسیاری برنامه‌ی پرکاربرد دیگر.</p>
+        <h3>برنامه‌های شبکه‌های اجتماعی</h3>
+        <p>
+          امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های اجتماعی
+          امکان‌پذیر مثل واتساپ، اینستاگرام، تلگرام، توییتر، یوتیوب و ... نیست.
+          هر برنامه‌ای که دوست دارید را انتخاب و ارتباط با جهان را آغاز کنید.
+          جدیدترین بروزرسانی این اپ‌های بسیار پرطرفدار نیز به محض انتشار، در
+          بازار قرار می‌گیرند و از طریق اطلاع‌رسانی‌ها (نوتیفیکیشن) شما را مطلع
+          می‌کنند.
+        </p>
 
+        <h3>ابزارهای اندرویدی</h3>
+        <p>
+          گوشی شما با برنامه‌های دسته‌ی ابزارهای بازار، آچار فرانسه‌ است. از
+          ماشین حساب، زنگ، یادآور و تقویم گرفته تا ابزارهای افزایش سرعت گوشی،
+          قفل برنامه‌ها، افزایش عمر باتری، ارزیابی سرعت و مصرف اینترنت، تبدیل
+          واحدها، بارکد ساز و بارکدخوان، قطب‌نما، چراغ قوه، ساخت نسخه‌ی پشتیبان،
+          دفتر یادداشت، آنتی ویروس‌ها، حافظه‌ی ابری و بسیاری برنامه‌ی پرکاربرد
+          دیگر.
+        </p>
 
-            <h3>اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</h3>
-            <p>اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و بیشتر استفاده کنید، به دسته‌های شخصی‌سازی و عکاسی و
-                ویدیو سر بزنید. اپلیکیشن‌های تصاویر پس زمینه، قفل‌ها و برترین‌ برنامه‌های تغییر فضای گوشی را از دسته‌ی
-                شخصی‌سازی نصب کنید. برنامه‌های ویرایش و ساخت عکس، ساخت ویدیو و چاپ عکس را نیز از دسته‌ي عکاسی و ویدیو
-                دانلود کنید و دنیای فیلترها و ابزارهای تدوین را تجربه کنید.</p>
+        <h3>اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</h3>
+        <p>
+          اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و بیشتر استفاده کنید،
+          به دسته‌های شخصی‌سازی و عکاسی و ویدیو سر بزنید. اپلیکیشن‌های تصاویر پس
+          زمینه، قفل‌ها و برترین‌ برنامه‌های تغییر فضای گوشی را از دسته‌ی
+          شخصی‌سازی نصب کنید. برنامه‌های ویرایش و ساخت عکس، ساخت ویدیو و چاپ عکس
+          را نیز از دسته‌ي عکاسی و ویدیو دانلود کنید و دنیای فیلترها و ابزارهای
+          تدوین را تجربه کنید.
+        </p>
 
-            <p>از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را با آن‌ها، به سبک خود تغییر دهید. مثلا زنگ گوشی، پس
-                زمینه و صفحه کلید شخصی خود را دانلود کنید و با قفل فایل‌ها و برنامه‌ها کنترل موبایل خود را به دست
-                بگیرید.</p>
+        <p>
+          از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را با آن‌ها، به سبک
+          خود تغییر دهید. مثلا زنگ گوشی، پس زمینه و صفحه کلید شخصی خود را دانلود
+          کنید و با قفل فایل‌ها و برنامه‌ها کنترل موبایل خود را به دست بگیرید.
+        </p>
 
+        <h3>برنامه‌های امور مالی</h3>
+        <p>
+          حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی امور مالی
+          برنامه‌های کاربردی‌ای مثل رمز پویا، روش‌های انتقال پول، همراه بانک‌ها،
+          حسابداری شخصی تا برنامه‌های تحلیلی بازار بورس و سرمایه‌گذاری، فروش
+          سهام عدالت، قوانین مالی و محاسبات حقوقی، محاسبه سود سپرده و وام را
+          پوشش می‌دهد. همینطور با کمک برنامه‌های حسابداری شخصی، تحلیل بازار بورس
+          و مالی می‌توانید سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان را محاسبه
+          کنید.
+        </p>
 
-            <h3>برنامه‌های امور مالی</h3>
-            <p>حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی امور مالی برنامه‌های کاربردی‌ای مثل رمز
-                پویا، روش‌های انتقال پول، همراه بانک‌ها، حسابداری شخصی تا برنامه‌های تحلیلی بازار بورس و سرمایه‌گذاری،
-                فروش سهام عدالت، قوانین مالی و محاسبات حقوقی، محاسبه سود سپرده و وام را پوشش می‌دهد. همینطور با کمک
-                برنامه‌های حسابداری شخصی، تحلیل بازار بورس و مالی می‌توانید سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان
-                را محاسبه کنید.</p>
+        <h3>اپ‌های آموزشی</h3>
+        <p>
+          آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که بتوانند
+          سریع‌ترین و شیرین‌ترین روش یادگیری موضوعات مثل زبان انگلیسی، آشپزی،
+          درس‌های از دبستان تا کنکور، برنامه‌نویسی و بسیاری موضوعات دیگر را در
+          دسترس قرار دهند، بیشترین طرفدار را دارند. این دسته، دنیایی از
+          اپلیکیشن‌هاست که می‌توانید با دانلود آن‌ها هر موضوعی را یاد بگیرید.
+          معروف‌ترین و پرطرفدارترین برنامه این دسته هم اپلیکیشن شاد مدارس است که
+          دانش‌آموزان علاقه زیادی به آن دارند.(!)
+        </p>
 
+        <h3>برنامه‌های موسیقی و صداگذاری</h3>
+        <p>
+          برنامه‌های اندروید موسیقی، شما را به آخرین آلبوم‌ها و آهنگ‌های روز
+          متصل می‌کند. با کمک این اپ‌ها می‌توانید پلی‌لیست‌ شخصی‌های خود را
+          بسازید، روی ویدیوهای خود صدا بگذارید و اپلیکیشن‌های تغییر صدای مختلف
+          را ببینید.
+        </p>
 
-            <h3>اپ‌های آموزشی</h3>
-            <p>آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که بتوانند سریع‌ترین و شیرین‌ترین روش یادگیری
-                موضوعات مثل زبان انگلیسی، آشپزی، درس‌های از دبستان تا کنکور، برنامه‌نویسی و بسیاری موضوعات دیگر را در
-                دسترس قرار دهند، بیشترین طرفدار را دارند. این دسته، دنیایی از اپلیکیشن‌هاست که می‌توانید با دانلود آن‌ها
-                هر موضوعی را یاد بگیرید. معروف‌ترین و پرطرفدارترین برنامه این دسته هم اپلیکیشن شاد مدارس است که
-                دانش‌آموزان علاقه زیادی به آن دارند.(!)</p>
+        <h3>بازار کودک</h3>
+        <p>
+          بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و برترین
+          اپلیکیشن‌های کودک در دسته‌ی کودک بازار، ویژه کودکان شما است. امروز
+          ارتباط کودکان با دنیای تکنولوژی غیرقابل انکار است. از دسته‌ی کودک
+          براحتی انتخاب کنید که دوست دارید کودک شما با کدام برنامه‌‌ی اندرویدی،
+          بازی کند و یاد بگیرد.
+        </p>
 
+        <p>
+          با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال راحت گوشی
+          هوشمند خود را در اختیار کودکان قرار دهید و خیالتان راحت باشد که
+          محتواهای نامناسب برای فرزندتان نمایش داده نمی‌شود.
+        </p>
 
-            <h3>برنامه‌های موسیقی و صداگذاری</h3>
-            <p>برنامه‌های اندروید موسیقی، شما را به آخرین آلبوم‌ها و آهنگ‌های روز متصل می‌کند. با کمک این اپ‌ها
-                می‌توانید پلی‌لیست‌ شخصی‌های خود را بسازید، روی ویدیوهای خود صدا بگذارید و اپلیکیشن‌های تغییر صدای مختلف
-                را ببینید.</p>
+        <h3>اپ‌های سرگرمی</h3>
+        <p>
+          داشتن گوشی هوشمند در عین حال که کاربردی است، سرگرم کننده هم هست.
+          برنامه‌های دسته‌ی سرگرمی طیف متفاوتی از اپلیکیشن‌هایی است که می‌توانید
+          بسته به حال و لحظه از بین آنها انتخاب کنید؛ اهل نقاشی دیجیتال هستید؟
+          دوست دارید فیلم و سریال تماشا کنید؟ هر چیزی که بخواهید را می‌توانید در
+          این دسته‌بندی پیدا کنید.
+        </p>
 
+        <h3>برنامه‌های ورزشی</h3>
+        <p>
+          با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد. فوتبال،
+          والیبال، لیگ برتر و جام حذفی، المپیک و حاشیه‌ی دنیای ورزش، پخش زنده و
+          هیاهوی بازی‌های فینال، برنامه‌های اخبار و پخش زنده ورزشی، همه و همه در
+          بازار موجود هستند.
+        </p>
 
-            <h3>بازار کودک</h3>
-            <p>بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و برترین اپلیکیشن‌های کودک در دسته‌ی کودک بازار،
-                ویژه کودکان شما است. امروز ارتباط کودکان با دنیای تکنولوژی غیرقابل انکار است. از دسته‌ی کودک براحتی
-                انتخاب کنید که دوست دارید کودک شما با کدام برنامه‌‌ی اندرویدی، بازی کند و یاد بگیرد.</p>
+        <h3>اپلیکیشن‌های مذهبی</h3>
+        <p>
+          دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌های کاربردی و تخصصی این حوزه را در
+          خود جای داده است. برنامه‌های پرکاربرد مذهبی مانند تقویم‌های اذان‌گو و
+          اوقات شرعی و برنامه‌های آموزش حفظ و تلاوت قرآن، قرآن کتبی و صوتی،
+          برنامه‌های ختم قرآن و حکایت‌های مذهبی را در دسته‌ی مذهبی به راحتی پیدا
+          و دانلود کنید.
+        </p>
 
-            <p>با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال راحت گوشی هوشمند خود را در اختیار کودکان قرار
-                دهید و خیالتان راحت باشد که محتواهای نامناسب برای فرزندتان نمایش داده نمی‌شود.</p>
+        <h3>برنامه‌های سفر</h3>
+        <p>
+          بازار برنامه‌های اندروید، مقصد بی انتهایی است از اپلکیشن‌هایی که سفر
+          کردن را راحت‌ترمی‌کند. خرید بلیط هواپیما و قطار تا انتخاب محل اقامت و
+          تورهای مسافرتی، گردشگری و بوم‌گردی برنامه می‌خواهد. در این سفر
+          برنامه‌های مسیریاب،
+        </p>
 
-            <h3>اپ‌های سرگرمی</h3>
-            <p>داشتن گوشی هوشمند در عین حال که کاربردی است، سرگرم کننده هم هست. برنامه‌های دسته‌ی سرگرمی طیف متفاوتی از
-                اپلیکیشن‌هایی است که می‌توانید بسته به حال و لحظه از بین آنها انتخاب کنید؛ اهل نقاشی دیجیتال هستید؟ دوست
-                دارید فیلم و سریال تماشا کنید؟ هر چیزی که بخواهید را می‌توانید در این دسته‌بندی پیدا کنید.</p>
+        <p>
+          از نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر کمک بگیرید. با
+          اپلیکیشن‌های تاکسی‌های آنلاین در شهر رفت و آمد کنید. با دانلود
+          برنامه‌های نمایش خلافی خودرو و خدمات تعمیر خودرو، با خیال راحت
+          بحران‌ها را مدیریت کنید.
+        </p>
 
+        <h3>کتاب‌ها و مطبوعات اندرویدی</h3>
+        <p>
+          اگر اهل کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما است.
+          اپلیکیشن‌های پادکست‌، نشریات انگلیسی زبان وآخرین اخبار روز در این دسته
+          جمع شده‌اند. برنامه‌های کتابگردی، پادکست‌ها، خرید آنلاین کتاب، اخبار
+          رسمی روز، داستان‌ها و قصه‌ها برای کودکان و نشریات انگلیسی زبان، همگی
+          را می‌توانید از بازار دانلود کنید.
+        </p>
 
-            <h3>برنامه‌های ورزشی</h3>
-            <p>با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد. فوتبال، والیبال، لیگ برتر و جام حذفی،
-                المپیک و حاشیه‌ی دنیای ورزش، پخش زنده و هیاهوی بازی‌های فینال، برنامه‌های اخبار و پخش زنده ورزشی، همه و
-                همه در بازار موجود هستند.</p>
+        <h3>برنامه‌های پزشکی و سلامت و تناسب اندام</h3>
+        <p>
+          سلامتی و پزشکی هم در گوشی هوشمند جا دارد. برنامه‌های مراقبت از سلامتی
+          و اطلاعات پزشکی و گرفتن نوبت دکتر و کمک‌های اولیه یک پزشک همراه است.
+          سلامت، برنامه‌ریزی هم می‌خواهد. با اپلیکیشن‌های دسته‌ی تناسب اندام به
+          راحتی برای سلامتی و بدن خود برنامه بریزید. با دانلود برنامه‌های تغذیه
+          و رژیم برای خود هدف گذاری کنید. راحت‌تر بخوابید، با برنامه پیاده‌روی
+          کنید و تمرین‌های روزانه و بدن‌سازی و ورزش خود را با کارهای روزانه‌ای
+          مانند خرید هفتگی و روزانه تنظیم کنید.
+        </p>
 
+        <h3>برنامه‌های خرید اینترنتی</h3>
+        <p>
+          برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد غذایی، گوشی،
+          خانه و اتومبیل بخرید. آخرین و بهترین قیمت‌ها را رصد کنید و از بین
+          هزاران کالای موجود در سراسر ایران انتخاب کنید.
+        </p>
 
-            <h3>اپلیکیشن‌های مذهبی</h3>
-            <p>دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌های کاربردی و تخصصی این حوزه را در خود جای داده است. برنامه‌های
-                پرکاربرد مذهبی مانند تقویم‌های اذان‌گو و اوقات شرعی و برنامه‌های آموزش حفظ و تلاوت قرآن، قرآن کتبی و
-                صوتی، برنامه‌های ختم قرآن و حکایت‌های مذهبی را در دسته‌ی مذهبی به راحتی پیدا و دانلود کنید.</p>
+        <h3>برنامه‌های آب‌ و هوا</h3>
+        <p>
+          برنامه‌های آب و هوا شما را در جریانی تغییرات لحظه‌ای و اخبار روز
+          هواشناسی قرار می‌دهد. در عین حال می‌توانید کیفیت هوای محل زندگی خود را
+          مداوم رصد کنید، تغییرات زمین و آمادگی پس از حوادثی مانند زلزله و سیل
+          نیز نیاز به آموزش دارد که تمامی این اطلاعات در برنامه‌های این دسته در
+          دسترس است.
+        </p>
 
+        <h3>برنامه‌های آشپزی Android</h3>
+        <p>
+          آب و هوای دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر
+          می‌شود. برنامه‌های آشپزی بازار برای هرسلیقه‌‌ای با هر میزان دسترسی به
+          مواد غذایی دستور غذایی دارد. آنلاین با گوشی اندروید هوشمند خود مواد
+          غذایی و میوه بخرید. با دستورهای جدید، پخت و پز کنید. با برنامه‌های
+          آشپزی و رستوران، رستوران‌های جدید را بشناسید، غذا سفارش دهید و
+          رستوران‌گردی کنید.
+        </p>
 
-            <h3>برنامه‌های سفر</h3>
-            <p>بازار برنامه‌های اندروید، مقصد بی انتهایی است از اپلکیشن‌هایی که سفر کردن را راحت‌ترمی‌کند. خرید بلیط
-                هواپیما و قطار تا انتخاب محل اقامت و تورهای مسافرتی، گردشگری و بوم‌گردی برنامه می‌خواهد. در این سفر
-                برنامه‌های مسیریاب،</p>
-
-            <p>از نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر کمک بگیرید. با اپلیکیشن‌های تاکسی‌های آنلاین در شهر رفت و
-                آمد کنید. با دانلود برنامه‌های نمایش خلافی خودرو و خدمات تعمیر خودرو، با خیال راحت بحران‌ها را مدیریت
-                کنید.</p>
-
-
-            <h3>کتاب‌ها و مطبوعات اندرویدی</h3>
-            <p>اگر اهل کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما است. اپلیکیشن‌های پادکست‌، نشریات
-                انگلیسی زبان وآخرین اخبار روز در این دسته جمع شده‌اند. برنامه‌های کتابگردی، پادکست‌ها، خرید آنلاین کتاب،
-                اخبار رسمی روز، داستان‌ها و قصه‌ها برای کودکان و نشریات انگلیسی زبان، همگی را می‌توانید از بازار دانلود
-                کنید.</p>
-
-
-            <h3>برنامه‌های پزشکی و سلامت و تناسب اندام</h3>
-            <p>سلامتی و پزشکی هم در گوشی هوشمند جا دارد. برنامه‌های مراقبت از سلامتی و اطلاعات پزشکی و گرفتن نوبت دکتر و
-                کمک‌های اولیه یک پزشک همراه است. سلامت، برنامه‌ریزی هم می‌خواهد. با اپلیکیشن‌های دسته‌ی تناسب اندام به
-                راحتی برای سلامتی و بدن خود برنامه بریزید. با دانلود برنامه‌های تغذیه و رژیم برای خود هدف گذاری کنید.
-                راحت‌تر بخوابید، با برنامه پیاده‌روی کنید و تمرین‌های روزانه و بدن‌سازی و ورزش خود را با کارهای
-                روزانه‌ای مانند خرید هفتگی و روزانه تنظیم کنید.</p>
-
-
-            <h3>برنامه‌های خرید اینترنتی</h3>
-            <p>برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد غذایی، گوشی، خانه و اتومبیل بخرید. آخرین و بهترین
-                قیمت‌ها را رصد کنید و از بین هزاران کالای موجود در سراسر ایران انتخاب کنید.</p>
-
-
-            <h3>برنامه‌های آب‌ و هوا</h3>
-            <p>برنامه‌های آب و هوا شما را در جریانی تغییرات لحظه‌ای و اخبار روز هواشناسی قرار می‌دهد. در عین حال
-                می‌توانید کیفیت هوای محل زندگی خود را مداوم رصد کنید، تغییرات زمین و آمادگی پس از حوادثی مانند زلزله و
-                سیل نیز نیاز به آموزش دارد که تمامی این اطلاعات در برنامه‌های این دسته در دسترس است.</p>
-
-
-            <h3>برنامه‌های آشپزی Android</h3>
-            <p>آب و هوای دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر می‌شود. برنامه‌های آشپزی بازار برای
-                هرسلیقه‌‌ای با هر میزان دسترسی به مواد غذایی دستور غذایی دارد. آنلاین با گوشی اندروید هوشمند خود مواد
-                غذایی و میوه بخرید. با دستورهای جدید، پخت و پز کنید. با برنامه‌های آشپزی و رستوران، رستوران‌های جدید را
-                بشناسید، غذا سفارش دهید و رستوران‌گردی کنید.</p>
-
-
-            <h3>اپلیکیشن‌های سبک زندگی</h3>
-            <p>هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن به برنامه‌های دسته‌ی سبک زندگی نیاز دارد. در دسته‌ی سبک
-                زندگی می‌توانید برنامه‌های اندروید سلامت روان و خوشناسی را دانلود کنید؛ یا سری به برنامه‌های کاربردی
-                بزنید و هر سرویس آنلاینی که در طول روز به آن نیاز دارید از خشکشویی تا تعمیرات خانه و طراحی داخلی را پیدا
-                کنید.</p>
-
-
-
-        </section>
-
-
+        <h3>اپلیکیشن‌های سبک زندگی</h3>
+        <p>
+          هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن به برنامه‌های دسته‌ی
+          سبک زندگی نیاز دارد. در دسته‌ی سبک زندگی می‌توانید برنامه‌های اندروید
+          سلامت روان و خوشناسی را دانلود کنید؛ یا سری به برنامه‌های کاربردی
+          بزنید و هر سرویس آنلاینی که در طول روز به آن نیاز دارید از خشکشویی تا
+          تعمیرات خانه و طراحی داخلی را پیدا کنید.
+        </p>
+      </section>
     </main>
 
-
-
     <section class="footer-mobile">
-        <div>
-            <i class="	fa fa-gamepad"></i>
-            <a href="#">بازی</a>
-        </div>
+      <div class="w-33">
+        <i class="fa fa-gamepad"></i>
+        <a title="link" href="#">بازی</a>
+      </div>
 
-        <div>
-            <div class="khat-sabz2"></div>
-            <i class="material-icons">	apps</i>
-            <a href="#">برنامه</a>
-        </div>
+      <div class="w-33">
+        <div class="khat-sabz2"></div>
+        <i class="material-icons"> apps</i>
+        <a title="link" href="#">برنامه</a>
+      </div>
 
-        <div>
-            <i class="	fa fa-download"></i>
-            <a href="#">نصب بازار</a>
-        </div>
+      <div class="w-33">
+        <i class="fa fa-download"></i>
+        <a title="link" href="#">نصب بازار</a>
+      </div>
     </section>
 
     <div class="footer">
-        <footer>
+      <footer>
+        <section class="sec-1-footer">
+          <div class="d-1-sec-1-footer">
+            <h3>
+              بازار، نخستین و پرمخاطب‌ترین فروشگاه ایرانی برنامه‌ها و بازی‌های
+              موبایلی دنیای اندروید
+            </h3>
+            <p>
+              صد‌ها هزار بازی ایرانی و خارجی دیتادار یا بدون دیتا را با ترافیک
+              نیم‌بها نصب کنید و به سادگی خرید درون‌ برنامه‌ای انجام دهید. بازار
+              مجهز به سپر امنیت است که برنامه‌ها را توسط آنتی ویروس‌ها بررسی
+              کرده و به محض شناسایی برنامه‌ی مخرب، به کاربر اعلام می‌کند که آن
+              برنامه را از دستگاه خود پاک کند.
+            </p>
+          </div>
 
-            <section class="sec-1-footer">
+          <div class="d-2-sec-1-footer">
+            <img src="img/footer-download.png" alt="" />
+            <div>
+              <h4>دانلود اپلیکیشن بازار</h4>
+              <p>پرمخاطب‌ترین اپ‌استور (اندروید) فارسی‌زبانان</p>
+              <a
+                title="link"
+                href="https://cafebazaar.ir/install?manual=1&autostart"
+                >نسخه اندروید</a
+              >
+              <a title="link" href="https://tv.cafebazaar.ir/"
+                >نسخه اندروید TV</a
+              >
+            </div>
+          </div>
+        </section>
 
-                <div class="d-1-sec-1-footer">
-                    <h3>بازار، نخستین و پرمخاطب‌ترین فروشگاه ایرانی برنامه‌ها و بازی‌های موبایلی دنیای اندروید</h3>
-                    <p>صد‌ها هزار بازی ایرانی و خارجی دیتادار یا بدون دیتا را با ترافیک نیم‌بها نصب کنید و به سادگی خرید
-                        درون‌ برنامه‌ای انجام دهید. بازار مجهز به سپر امنیت است که برنامه‌ها را توسط آنتی ویروس‌ها بررسی
-                        کرده و به محض شناسایی برنامه‌ی مخرب، به کاربر اعلام می‌کند که آن برنامه را از دستگاه خود پاک
-                        کند.
-                    </p>
-                </div>
+        <section class="sec-2-footer">
+          <ul>
+            <li><a title="link" href="#">نصب بازار</a></li>
+            <li><a title="link" href="#">بازی اندروید</a></li>
+            <li><a title="link" href="#">برنامه اندروید</a></li>
+          </ul>
 
+          <ul>
+            <li><a title="link" href="#">توسعه‌دهندگان بازار</a></li>
+            <li><a title="link" href="#">فرصت‌های شغلی</a></li>
+            <li><a title="link" href="#">نشان دریافت از بازار</a></li>
+          </ul>
 
-                <div class="d-2-sec-1-footer">
+          <ul>
+            <li><a title="link" href="#">شرایط استفاده</a></li>
+            <li><a title="link" href="#">حریم خصوصی</a></li>
+            <li><a title="link" href="#">پشتیبانی</a></li>
+          </ul>
 
-                    <img src="img/footer-download.png" alt="">
-                    <div>
-                        <h4>دانلود اپلیکیشن بازار</h4>
-                        <p>پرمخاطب‌ترین اپ‌استور (اندروید) فارسی‌زبانان</p>
-                        <a href="https://cafebazaar.ir/install?manual=1&autostart">نسخه اندروید</a>
-                        <a href="https://tv.cafebazaar.ir/">نسخه اندروید TV</a>
-                    </div>
-                </div>
+          <ul>
+            <li><a title="link" href="#">بلاگ بازار</a></li>
+            <li><a title="link" href="#">خبرها و بیانیه‌های بازار</a></li>
+            <li><a title="link" href="#">بلاگ فنی بازار</a></li>
+          </ul>
 
-            </section>
+          <ul>
+            <li><a title="link" href="#">تبلیغات در بازار</a></li>
+            <li><a title="link" href="#">درباره ما</a></li>
+            <li><a title="link" href="#">تماس با ما</a></li>
+          </ul>
 
+          <div class="d-sec-2-footer">
+            <img src="img/logo-namad.png" alt="" />
+            <img src="img/logo-rezvan.png" alt="" />
+          </div>
+        </section>
 
+        <section class="sec-3-footer">
+          <p>
+            تمامی حقوق این سایت متعلق به شرکت آوای همراه هوشمند هزاردستان
+            (فروشگاه برنامه‌های موبایلی اندروید بازار) است.
+          </p>
 
-
-            <section class="sec-2-footer">
-
-
-                <ul>
-                    <li><a href="#">نصب بازار</a></li>
-                    <li><a href="#">بازی اندروید</a></li>
-                    <li><a href="#">برنامه اندروید</a></li>
-
-                </ul>
-
-
-                <ul>
-                    <li><a href="#">توسعه‌دهندگان بازار</a></li>
-                    <li><a href="#">فرصت‌های شغلی</a></li>
-                    <li><a href="#">نشان دریافت از بازار</a></li>
-
-                </ul>
-
-
-                <ul>
-                    <li><a href="#">شرایط استفاده</a></li>
-                    <li><a href="#">حریم خصوصی</a></li>
-                    <li><a href="#">پشتیبانی</a></li>
-
-                </ul>
-
-
-                <ul>
-                    <li><a href="#">بلاگ بازار</a></li>
-                    <li><a href="#">خبرها و بیانیه‌های بازار</a></li>
-                    <li><a href="#">بلاگ فنی بازار</a></li>
-
-                </ul>
-
-
-                <ul>
-                    <li><a href="#">تبلیغات در بازار</a></li>
-                    <li><a href="#">درباره ما</a> </li>
-                    <li><a href="#">تماس با ما</a></li>
-
-                </ul>
-
-
-
-
-                <div class="d-sec-2-footer">
-
-                    <img src="img/logo-namad.png" alt="">
-                    <img src="img/logo-rezvan.png" alt="">
-
-
-                </div>
-
-
-            </section>
-
-
-
-
-            <section class="sec-3-footer">
-
-                <p>تمامی حقوق این سایت متعلق به شرکت آوای همراه هوشمند هزاردستان (فروشگاه برنامه‌های موبایلی اندروید
-                    بازار) است.</p>
-
-                <ul>
-                    <li><a href=""><i class="fa fa-linkedin"></i></a></i></li>
-                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </section>
-
-        </footer>
+          <ul>
+            <li>
+              <a title="link" href=""><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a title="link" href=""><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a title="link" href=""><i class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
